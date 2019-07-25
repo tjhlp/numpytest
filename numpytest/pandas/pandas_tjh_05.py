@@ -1,4 +1,4 @@
 import pandas as pd
 
-fiddy_states = pd.read_html('http://www.meiduo.site:8000/orders/info/1/')
-print(fiddy_states)
+fiddy_states = pd.read_html('../data/List of U.S. states - Simple English Wikipedia, the free encyclopedia.html')
+print(fiddy_states[0])
