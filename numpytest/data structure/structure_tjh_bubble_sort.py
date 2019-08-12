@@ -9,12 +9,14 @@ def bubble_sort(alist):
                 alist[i], alist[i + 1] = alist[i + 1], alist[i]
 
 
-def bubble_sort_reverse(alist):
+# 错误排序算法
+def bubble_sort_error(alist):
     for j in range(len(alist)):
         for i in range(j):
-            pass
+            if alist[i] < alist[i + 1]:
+                alist[i], alist[i + 1] = alist[i + 1], alist[i]
 
 
-li = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-bubble_sort_reverse(li)
+li = [10, 44, 20, 17, 77, 31, 93, 55, 53]
+bubble_sort(li)
 print(li)
