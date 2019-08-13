@@ -14,6 +14,21 @@ def shell_sort(alist):
         gap = gap // 2
 
 
-alist = [54, 26, 93, 17, 77, 31, 19,44, 55, 20]
-shell_sort(alist)
+def shell_sort_exercise(alist):
+    n = len(alist)
+
+    gap = n // 2
+
+    while gap > 0:
+        for i in range(gap, n):
+            j = i
+
+            while j >= gap and alist[j] < alist[j - gap]:
+                alist[j], alist[j - gap] = alist[j - gap], alist[j]
+                j -= gap
+        gap = gap // 2
+
+
+alist = [54, 26, 93, 17, 77, 31, 19, 44, 55, 20]
+shell_sort_exercise(alist)
 print(alist)
