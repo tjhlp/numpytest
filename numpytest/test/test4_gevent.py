@@ -1,7 +1,7 @@
 import time
 from gevent import monkey
 import gevent
-# monkey.patch_all()
+monkey.patch_all()
 
 
 def work1():
@@ -23,3 +23,7 @@ g2 = gevent.spawn(work2)
 # 等待协程执行完成再关闭主线程
 g1.join()
 g2.join()
+
+
+
+
