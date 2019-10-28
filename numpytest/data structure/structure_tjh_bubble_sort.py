@@ -8,12 +8,6 @@ def bubble_sort(alist):
                 alist[i], alist[i + 1] = alist[i + 1], alist[i]
 
 
-# 错误排序算法
-def bubble_sort_error(alist):
-    for j in range(len(alist)):
-        for i in range(j):
-            if alist[i] < alist[i + 1]:
-                alist[i], alist[i + 1] = alist[i + 1], alist[i]
 
 
 li = [10, 44, 20, 17, 77, 31, 93, 55, 53]
