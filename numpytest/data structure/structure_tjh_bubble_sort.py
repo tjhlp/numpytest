@@ -9,7 +9,6 @@ def bubble_sort(alist):
 
 
 
-
 li = [10, 44, 20, 17, 77, 31, 93, 55, 53]
 bubble_sort(li)
 print(li)
